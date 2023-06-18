@@ -1,0 +1,29 @@
+/*
+    Basic nav background has been set.
+    A href's style set.
+    Selected, highlighting what page a user is on.
+    img, border was rounded. KEY, remember to put . in front of class
+*/
+body{
+    font-family: sans-serif;
+}
+
+.main-nav {
+    background-color: #F5FDFC ;
+}
+
+.product_img{
+    border: solid 2px #121A19;
+    border-radius: 30px;
+}
+
+a{
+    font-size: 20px;
+    color: #06082B;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#selected{
+    color:#182BFB
+}
