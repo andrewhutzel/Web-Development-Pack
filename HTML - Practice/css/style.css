@@ -6,7 +6,10 @@
 */
 body{
     font-family: sans-serif;
+    margin:0;
 }
+
+/* Nav Bar */
 
 .main-nav {
     background-color: #F5FDFC ;
@@ -26,4 +29,26 @@ a{
 
 #selected{
     color:#182BFB
+}
+
+
+/* Introductory section */
+
+#intro{
+    background-color:#070A0A ;
+    color:white;
+}
+
+/* 
+    Products -- The max-width and max-height allow for the border to shape around the div used.
+    border -- functions as the black line that goes around the div
+    border-radius -- dictated size of the border
+*/
+
+#products{
+    background-color: #E9E6F0;
+    border: solid 2px #121A19;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }

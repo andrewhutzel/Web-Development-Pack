@@ -17,21 +17,26 @@
         <a href="signup.html">Signup</a>
     </nav>
 <!-- Main Content-->   
-    <hr>
-    <h1>Shopping for svgs and pngs of clothes</h1>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<!-- Video -->
-    <video controls width="300px">
-        <source src="videos/count_down.mp4">
-    </video>
+    <!-- Assigning an ID, since this will only be used once-->
+    <div id="intro">
+        <h1>Shopping for svgs and pngs of clothes</h1>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
+        <!-- Video -->
+        <video controls width="300px">
+            <source src="videos/count_down.mp4">
+        </video>
+    
+    </div>
 <!-- Category of Listed Items-->
     <nav>
         <a>Shorts</a>
         <a>Pants</a>
         <a>Shoe</a>
     </nav>
-    <!-- Product Cards-->
+<!-- Product Cards-->
+    <!-- Assign a temporary id products to the div to outline it-->
+    <div id="products">
         <img src="images/product_images/icons8-shorts-100.png" alt="shorts image" class="product_img">
             <h3>Shorts</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -41,5 +46,6 @@
         <img src="images/product_images/icons8-shoe-100.png" alt="shoe image" class="product_img">
             <h3>Shoes</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
 </body>
 </html>
