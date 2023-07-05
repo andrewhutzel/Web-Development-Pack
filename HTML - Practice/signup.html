@@ -4,16 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Signup</title>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="signup.html">Signup</a></li>
-    </ul>
-    <h1>Signup</h1>
+    <!-- Directly imported from index.html -->
+    <img src="images/banner/banner_Generic.svg" width="300" alt="banner logo">
+    <nav class="main-nav">
+        <a href="index.html" id="selected">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <form>
+        <!-- Email input-->
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="email@email.com" id="email" required>
+        <!-- Password Input -->
+        <br>
+        <label for="pass">Password:</label> <br>
+        <input type="password" placeholder="Complex Password here..." id="pass" required> 
+        <br>
+        <!-- Assgin two spaces below sign up -->
+        <!-- Full name -->
+        <label for="name"> Name</label><br>
+        <input name="name" id="name" placeholder="Markus" required>
+        <br>
+        <!-- Phone number -->
+        <label for="phone">Enter your phone #:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <!-- Gender -->
+        <label for="gender">Gender:</label><br>
+         <select name="gender" required>
+             <option value="">Please select one…</option>
+             <option value="female">Female</option>
+             <option value="male">Male</option>
+             <option value="non-binary">Non-Binary</option>
+             <option value="other">Other</option>
+             <option value="Prefer not to answer">Perfer not to Answer</option>
+          </select>
+          <br>
+        <!-- Date of birth -->
+        <label for="birthday">Date of birth:</label><br>
+        <input type="date" id="birthday" name="birthday" required><br>
+        <!-- Profile image -->
+        <p>Click on the "Choose File" button to upload a file:</p>
+          <input type="file" id="myFile" name="filename"> 
+        <br>
+        <!-- Terms of use checkbox -->
+        <input id="checkbox" type="checkbox" required />
+        <label for="checkbox">I agree to the Terms and Conditions of using this demo website... </label>
+        <br><br>
+        <!-- Signup Button -->
+        <button>Signup</button>
+    </form>
 </body>
 </html>
