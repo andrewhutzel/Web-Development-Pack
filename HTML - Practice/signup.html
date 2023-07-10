@@ -18,26 +18,30 @@
         <a href="signup.html">Signup</a>
     </nav>
 
-    <form>
+    <form class="sign_up">
+        <!-- Full name -->
+        <label for="name">Full Name</label><br>
+        <input name="name" id="name"  required>
+        <br>
         <!-- Email input-->
         <label for="email">Email:</label><br>
-        <input type="email" placeholder="email@email.com" id="email" required>
+        <input type="email" id="email" required>
         <!-- Password Input -->
         <br>
         <label for="pass">Password:</label> <br>
-        <input type="password" placeholder="Complex Password here..." id="pass" required> 
+        <input type="password" id="pass" required> 
         <br>
-        <!-- Assgin two spaces below sign up -->
-        <!-- Full name -->
-        <label for="name"> Name</label><br>
-        <input name="name" id="name" placeholder="Markus" required>
-        <br>
-        <!-- Phone number -->
+        
+
+        
+        <!-- Phone number 
         <label for="phone">Enter your phone #:</label><br>
         <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-        <!-- Gender -->
+        -->
+
+        <!-- Gender
         <label for="gender">Gender:</label><br>
-         <select id="gender" required>
+         <select name="gender" required>
              <option value="">Please select one…</option>
              <option value="female">Female</option>
              <option value="male">Male</option>
@@ -46,13 +50,19 @@
              <option value="Prefer not to answer">Perfer not to Answer</option>
           </select>
           <br>
-        <!-- Date of birth -->
+
+        -->
+        <!-- Date of birth
         <label for="birthday">Date of birth:</label><br>
         <input type="date" id="birthday" name="birthday" required><br>
-        <!-- Profile image -->
+        -->
+
+        <!-- Profile image 
         <label for="image">Upload Profile image</label><br>
           <input type="file" id="image"> 
         <br>
+        -->
+
         <!-- Terms of use checkbox -->
         <input id="checkbox" type="checkbox" required />
         <label for="checkbox">I agree to the <a href="">Terms and Conditions</a> of using this demo website... </label>

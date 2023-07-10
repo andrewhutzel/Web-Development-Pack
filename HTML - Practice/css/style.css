@@ -13,6 +13,7 @@ body{
 
 .main-nav {
     background-color: #F5FDFC ;
+    padding:10px;
 }
 
 a{
@@ -27,12 +28,58 @@ a{
 }
 
 
+
 /* Introductory section */
 
 #intro{
     background-color:#070A0A ;
     color:white;
 }
+
+
+/*Poking around Box Model for Inputs*/
+input{
+    margin:0 0 10px 0;
+    width: auto;
+    font-size: 20px;
+    margin:10px 10px;
+    padding:10px;
+    border: #000000;
+    outline: auto;
+}
+
+/*Navigation for categories -- Main Content*/
+#nav-category{
+    background-color: crimson;
+    width:200px;
+}
+
+/*Sign-up Class */
+
+.sign_up{
+    width: 400px;
+    background-color: #EEEFF1;
+    border: #06082B;
+    border-radius: 10px;
+    color:#000000;
+    padding:10px 10px;
+}
+
+/*Button Styling */
+
+button{
+    width:auto;
+    background-color: #5762D5;
+    font-size: 20px;
+    font-weight: 10;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border:black;
+    border-radius:10px;
+}
+
+
 
 /* 
     Products -- The max-width and max-height allow for the border to shape around the div used.
@@ -45,10 +92,11 @@ a{
 */
 
 .product_cards{
-    background-color: #E9E6F0;
+    background-color: #b2f096;
     border: solid 2px #121A19;
     border-radius: 30px 30px 0px 0px;
     width:200px;
+    margin: auto;
 }
 
 .product_img{
@@ -63,4 +111,12 @@ footer{
     width: 100%;
     text-align: center;
     color: #E9E6F0;
+}
+
+/* H1 Tag modification */
+
+h1{
+border: solid 2px white;
+padding: 10px;
+margin: 10px;
 }
