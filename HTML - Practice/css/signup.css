@@ -1,0 +1,81 @@
+/*
+    Basic nav background has been set.
+    A href's style set.
+    Selected, highlighting what page a user is on.
+    img, border was rounded. KEY, remember to put . in front of class
+*/
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+
+
+
+/* Nav Bar */
+
+.main-nav {
+    background-color: #F5FDFC ;
+    padding:10px;
+}
+
+.main-nav a{
+    font-size: 20px;
+    color: #06082B;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.main-nav a:hover{
+    color: #fb6376;   
+}
+
+#selected{
+    color:#182BFB
+}
+
+form{
+    width: 400px;
+    background-color: #EEEFF1;
+    border: solid 1px #3c404a17;
+    border-radius: 15px;
+    color: #3d414a;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+form a{
+    color:#182BFB;
+    text-decoration: none;
+}
+
+.field{
+    width:90%;
+    font-size:18px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px; 
+}
+
+.field:focus{
+    outline-color:#5762D5;
+}
+
+button{
+    width: 100%;
+    background-color: #5762D5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    background-color: #2a38d8; 
+    cursor: pointer;
+	margin: 2px 0;
+}
