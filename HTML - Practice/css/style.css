@@ -53,8 +53,39 @@ a{
 /* Introductory section */
 
 #intro{
-    background-color:#070A0A ;
+    display: flex;
+    width: 1100px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+#intro h1{
+    font-size:30px;
+}
+
+#intro p{
+    font-size: 20px;
+    color:#2b2343
+}
+
+#intro a{
+    background-color: #182BFB;
     color:white;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#intro a:hover{
+    cursor: pointer;
+    background-color: #000000;
+    transition-duration: 0.3;
+}
+
+video{
+    width:40%;
+    border-radius: 20px;
 }
 
 
@@ -140,8 +171,10 @@ footer{
 
 /* H1 Tag modification */
 
+/* Commenting out H1 tag
 h1{
 border: solid 2px white;
 padding: 10px;
 margin: 10px;
 }
+*/
