@@ -1,0 +1,200 @@
+/*
+    Basic nav background has been set.
+    A href's style set.
+    Selected, highlighting what page a user is on.
+    img, border was rounded. KEY, remember to put . in front of class
+*/
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+
+/* Nav Bar */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    background-color: #F5FDFC ;
+}
+
+.main-nav {
+    padding:10px;
+    display: flex;
+    gap: 40px 40px;
+}
+
+.main-nav a{
+    font-size: 20px;
+    color: #06082B;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.main-nav a:hover{
+    color: #fb6376;   
+}
+
+/* Commenting out, overriding product_nav
+a{
+    font-size: 20px;
+    color: #06082B;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+*/
+
+#selected{
+    color:#182BFB
+}
+
+
+
+/* Introductory section */
+
+#intro{
+    display: flex;
+    width: 1100px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+#intro h1{
+    font-size:30px;
+}
+
+#intro p{
+    font-size: 20px;
+    color:#2b2343
+}
+
+#intro a{
+    background-color: #182BFB;
+    color:white;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#intro a:hover{
+    cursor: pointer;
+    background-color: #000000;
+    transition-duration: 0.3;
+}
+
+video{
+    width:40%;
+    border-radius: 20px;
+}
+
+
+/*Poking around Box Model for Inputs*/
+input{
+    margin:0 0 10px 0;
+    width: auto;
+    font-size: 20px;
+    margin:10px 10px;
+    padding:10px;
+    border: #000000;
+    outline: auto;
+}
+
+/*Navigation for categories -- Main Content*/
+#nav-category{
+    background-color: crimson;
+    width:200px;
+}
+
+/*Sign-up Class */
+
+.sign_up{
+    width: 400px;
+    background-color: #EEEFF1;
+    border: #06082B;
+    border-radius: 10px;
+    color:#000000;
+    padding:10px 10px;
+}
+
+/*Button Styling */
+
+button{
+    width:auto;
+    background-color: #5762D5;
+    font-size: 20px;
+    font-weight: 10;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border:black;
+    border-radius:10px;
+}
+
+
+
+/* Main Content */
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-direction */
+
+.product_nav{
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+    margin: 15px auto;
+}
+
+.product_nav h3{
+    margin:0;
+}
+
+.product_nav a, main a{
+    color:#5762D5;
+    text-decoration: none;
+    transition-duration: 0.3;
+}
+
+.product_nav a:hover, main a:hover{
+    color:#fb6376;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1100px;
+    margin:auto;
+    gap: 30px 30px;
+}
+
+.product_cards{
+    background-color: #b2f096;
+    border-radius: 30px 30px;
+    width:250px;
+    /*margin: auto;*/
+}
+
+.product_img{
+    border-radius: 30px 30px 0px 0px;
+    display: inline;
+}
+
+/* Footer */
+
+footer{
+    background-color: #2b2343;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: #E9E6F0;
+}
+
+/* H1 Tag modification */
+
+/* Commenting out H1 tag
+h1{
+border: solid 2px white;
+padding: 10px;
+margin: 10px;
+}
+*/

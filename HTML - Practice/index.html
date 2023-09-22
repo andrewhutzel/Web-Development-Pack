@@ -1,39 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
     <title>Document</title>
 </head>
 
 <body>
 <!-- Header, banner links -->
-<img>
+    <header>
     <img src="images/banner/banner_Generic.svg" width="300" alt="banner logo">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="signup.html">Signup</a></li>
-    </ul>
+    <nav class="main-nav">
+        <a href="index.html" id="selected">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+    </header>
 <!-- Main Content-->   
-    <hr>
-    <h1>Shopping for svgs and pngs of clothes</h1>
-    <p>Weee <b>wee wee</b> <strong>STRONK</strong> <em>YARRR</em></p>
-<!-- Category of Listed Items-->
-    <ol>
-        <li>Shorts</li>
-        <li>Pants</li>
-        <li>Shoe</li>
-    </ol>
-    <!-- Product Cards-->
-        <img src="images/product_images/icons8-shorts-100.png" alt="shorts image">
-            <h3>Shorts</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="images/product_images/icons8-pants-100.png" alt="pants image">
-            <h3>Pants</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="images/product_images/icons8-shoe-100.png" alt="shoe image">
-            <h3>Shoes</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- Assigning an ID, since this will only be used once-->
+    <section id="intro">
+        
+
+            <div style="width: 60%">
+                <h1>Shopping for svgs and pngs of clothes</h1>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a>Become a Member</a>
+            </div>
+            
+
+            <!-- Video -->
+            <video controls>
+                <source src="videos/count_down.mp4">
+            </video>
+          
+            
+        
+    </section>
+<!-- Category of Listed Items 
+    <nav id="nav-category">
+        <a>Shorts</a>
+        <a>Pants</a>
+        <a>Shoe</a>
+    </nav>
+
+-->
+<!-- Product Cards-->
+    <!-- Assign a temporary id products to the div to outline it-->
+    <div class="product_nav">
+        <h3>Suits</h3>
+        <a href="">View Suits List</a>
+    </div>
+    <main>
+    <div class="product_cards">
+        <img src="images/product_images/suit-2.png" class="product_img">
+        <div style="padding:10px 30px"> 
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+            <a href="">View Product</a>
+        </div>
+     </div>
+
+     <div class="product_cards">
+        <img src="images/product_images/suit-2.png" class="product_img">
+        <div style="padding:10px 30px"> 
+            <h3>Product 2</h3>
+            <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+            <a href="">View Product</a>
+        </div>
+     </div>
+
+     <div class="product_cards">
+        <img src="images/product_images/suit-3.png" class="product_img">
+        <div style="padding:10px 30px"> 
+            <h3>Product 3</h3>
+            <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+            <a href="">View Product</a>
+        </div>
+     </div>
+
+     <div class="product_cards">
+        <img src="images/product_images/suit-4.png" alt="shorts image" class="product_img">
+        <div style="padding:10px 30px"> 
+            <h3>Product 4</h3>
+            <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+            <a href="">View Product</a>
+        </div>
+     </div>
+    </main>
+     <!-- Footer -->
+     <footer>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h2>
+     </footer>
 </body>
 </html>
