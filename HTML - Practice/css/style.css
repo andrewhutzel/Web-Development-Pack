@@ -36,13 +36,14 @@ header{
     color: #fb6376;   
 }
 
-
+/* Commenting out, overriding product_nav
 a{
     font-size: 20px;
     color: #06082B;
     font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+*/
 
 #selected{
     color:#182BFB
@@ -137,12 +138,31 @@ button{
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-direction */
 
+.product_nav{
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+    margin: 15px auto;
+}
+
+.product_nav h3{
+    margin:0;
+}
+
+.product_nav a, main a{
+    color:#5762D5;
+    text-decoration: none;
+    transition-duration: 0.3;
+}
+
+.product_nav a:hover, main a:hover{
+    color:#fb6376;
+}
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 900px;
-    background-color: #2b2343;
+    width: 1100px;
     margin:auto;
     gap: 30px 30px;
 }
