@@ -158,7 +158,7 @@ button{
 .product_nav a:hover, main a:hover{
     color:#fb6376;
 }
-main{
+#product_intro{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,3 +198,21 @@ padding: 10px;
 margin: 10px;
 }
 */
+
+/* Suits CSS */
+
+#product_container{
+    width: 70%;
+    height: 1100px;
+    margin: 50px auto;
+    background-color: #e7aeb5;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.suits{
+    background-color: #f0e7e7;
+    height: 100%;
+    border: solid black;
+}
