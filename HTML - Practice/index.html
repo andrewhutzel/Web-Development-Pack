@@ -3,6 +3,19 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+    <script type="text/javascript" src="index.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth'
+          });
+          calendar.render();
+        });
+  
+      </script>
     <title>Document</title>
 </head>
 
@@ -16,6 +29,7 @@
         <a href="contact.html">Contact</a>
         <a href="profile.html">Profile</a>
         <a href="signup.html">Signup</a>
+        <a href="calendar.html">Calendar</a>
     </nav>
     </header>
 <!-- Main Content-->   
@@ -90,7 +104,7 @@
      </div>
     </main>
 
-
+    
      <!-- Footer -->
      <footer>
         <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h2>
