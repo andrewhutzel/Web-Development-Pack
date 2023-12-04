@@ -107,34 +107,35 @@ function hideNav() {
 
 
 //Show / Hide Events
-//var all_review=  document.querySelectorAll('.review');
-//var all_pro_img = document.querySelectorAll('.product_img');
 
-//obj.addEventListener('mouseover',showReview());
-
-//obj.addEventListener('mouseoff', hideReview());
-
-
-//var all_reviews = document.querySelectorAll('.review');
-var prod_img = document.querySelector('.product_img');
-
-prod_img.addEventListener("mouseover", showReview)
-prod_img.addEventListener("mouseout", hideReview)
-
-function showReview(){
-    //document.querySelector(".review").style.opacity = "100%";
-    //document.querySelector(".product_img").style.filter ="brightness(0.4)"
-    document.querySelector(".review").classList.toggle("hover-review");
-    document.querySelector(".product_img").classList.toggle("hover-img");
+//Realistically you just eneed showreview, hidereview is redundant. For future updates remove hideReview()
+//Function takes event, which is the caad that is triggered by the mouseover event.
+//Assign the current target card to variable card then query the review & product_img.
+function showReview(event){
+    var card =event.currentTarget;
+    card.querySelector(".review").classList.toggle("hover-review");
+    card.querySelector(".product_img").classList.toggle("hover-img");
 }
 
-function hideReview(){
-    document.querySelector('.review').classList.toggle("hover-review");
-    document.querySelector(".product_img").classList.toggle("hover-img");
-
-    //document.querySelector(".review").style.opacity = "0%";
-    //document.querySelector(".product_img").style.filter ="brightness(1)"
+function hideReview(event){
+    var card =event.currentTarget;
+    card.querySelector('.review').classList.toggle("hover-review");
+    card.querySelector(".product_img").classList.toggle("hover-img");
 }
+
+
+//Pull all the cards dynamically
+var card_img = document.querySelectorAll(".product_cards");
+
+//Traverse all cards and add an event listener for showing / hiding
+card_img.forEach(function(card){
+    card.addEventListener("mouseover",showReview)
+    card.addEventListener("mouseout",hideReview)
+});
+
+
+
+
 
 
 //Check for when video ends and write to the console
