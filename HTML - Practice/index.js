@@ -1,3 +1,5 @@
+
+//Remove before moving to next branch
 function dailyAccounting(moneyMade, moneyLost){
     if(moneyMade <= moneyLost){
         finances.checking+=moneyMade-moneyLost;
@@ -8,7 +10,7 @@ function dailyAccounting(moneyMade, moneyLost){
     }
 
 }
-
+//Remove before moving to next branch
 function multi(){
     var num1 = prompt("Enter first number to multiply:");
     var num2 = prompt("Enter second number to multiply:");
@@ -20,6 +22,7 @@ function becomeMember(){
     console.log("Member button pressed")
 }
 
+//Remove before moving to next branch
 var list = ["jim", "bob", "cat"]
 function friends_check(person){
     if(list.includes(person)){
@@ -37,6 +40,8 @@ const person = {
     time_breaked: 0
 }
 
+//Function that simply gives 3 breaks of 5 minutes then on the 4th break you get 15.
+//Add one to the length to account for array slot 0.
 function pomo(){
 
         if((person.break_list.length+1)%4 !=0){
@@ -52,6 +57,7 @@ function pomo(){
 //Function that prints all even numbers in any given list
 //Function that finds if in an array all even indexs contain even numbers and all odd indexes contain odd numbers. I pull random values every time to test the functionality.
 function find_specials(){
+    //Randomly generates numbers so I don't have to populate manually each time.
     var test_arr=[];
     for(let i=0;i<Math.floor(Math.random() *10);i++){
         test_arr.push(Math.floor(Math.random() *10));
@@ -74,31 +80,32 @@ function find_specials(){
 
 //DOM var object manipulation
 var obj = document.querySelector('.product_cards')
-console.log(obj)
 
+//Remove before moving to next branch
 const shoe = {
     color: "Yellow",
     size: 40,
     price: 124.95,
     bestSeller: true
 }
-
+//Remove before moving to next branch
 const car = {
     working: false,
     wheels: "Flat",
     price: 10
 }
-
+//Remove before moving to next branch
 const finances = {
     savings: 1000,
     checking: 100,
     debt: 35000
 }
 
-//More document manipulation
+//More document manipulation for the "become a memeber" button on the main page. Gives a blue background,
+//purely for testing and should be removed before changing branches.
 
 var mem = document.getElementById("member-bt").style.boxShadow = "10px 20px 30px blue"
-console.log(mem)
+
 
 function hideNav() {
     document.querySelector(".main-nav").style.display = "none";
