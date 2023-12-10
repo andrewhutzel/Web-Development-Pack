@@ -79,3 +79,13 @@ button:hover{
     cursor: pointer;
 	margin: 2px 0;
 }
+
+.creating{
+    background-color: gray;
+}
+
+.creating h4:hover{
+    cursor: pointer;
+    background-color: #182BFB;
+    box-shadow: 0px 0px 20px #000;
+}

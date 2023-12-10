@@ -188,7 +188,74 @@ function calc(n1,n2,op){
 
 //Constuctors
 
-function TestFunc(first,last){
-    this.first = first;
-    this.last = last;
+var fart;
+
+function createUser(first,last){
+    this.first=first;
+    this.last=last;
+    this.greeting = function(){
+        console.log("WE're in create user")
+    }
+}
+
+function signup(first,last) {
+    fart = new createUser(first,last);
+    var overit = document.getElementById("changeme");
+
+    overit.textContent = fart.first + ' ' + fart.last;
+}
+
+
+var user2 = {
+    name:"Yeee",
+    display: function(){
+        return console.log("test");
+    }
+}
+
+var arr= [true,false,true,false,false]
+var total=0;
+function calcArr(){
+    arr.forEach(function(bool,i){
+        if(bool){
+            total++;
+        }
+    });
+    return total;
+}
+
+function fibonacci(n){
+    var arr = [0,1];
+    var sum=0;
+
+    for(i=0;i<8;i++){
+        sum=arr[i]+arr[i+1];
+        arr.push(sum);
+    }
+    console.log(arr);
+}
+
+const obj_2 ={
+    vowels:0,
+    consonants:0
+};
+
+var tiddies="mah gawd those are the biggest knockers I've ever seen. I do declare."
+
+function countVowelsAndConsonants(arg1){
+    arg1=arg1.toUpperCase();
+    arg1=arg1.replaceAll(' ', '');
+    console.log(arg1);
+    var i=0;
+
+    for(i=0;i<arg1.length;i++){
+        console.log("Arg["+i+"]="+arg1[i]+"\n");
+        if(arg1[i]==='A' || arg1[i]==='E' || arg1[i]==='I'|| arg1[i]==='O' || arg1[i]==='U' ){
+            obj_2.vowels++;
+        }else{
+            obj_2.consonants++;
+        }
+    }
+
+    return obj_2;
 }
