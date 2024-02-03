@@ -188,7 +188,7 @@ function calc(n1,n2,op){
 
 //Constuctors
 
-var fart;
+var art;
 
 function createUser(first,last){
     this.first=first;
@@ -199,10 +199,10 @@ function createUser(first,last){
 }
 
 function signup(first,last) {
-    fart = new createUser(first,last);
+ art = new createUser(first,last);
     var overit = document.getElementById("changeme");
 
-    overit.textContent = fart.first + ' ' + fart.last;
+    overit.textContent = art.first + ' ' + art.last;
 }
 
 
