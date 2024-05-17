@@ -1,0 +1,81 @@
+{%extends "base.html"%}
+<!-- -->
+{%load static%}
+<!-- -->
+{%block description%}This is my description{%endblock%} 
+<!-- -->
+{%block robots%}index, follow{%endblock%}
+<!-- -->
+{%block keywords%}Suits are very afforable{%endblock%} 
+<!-- -->
+{%block css%}{%static "products/style.css"%}{%endblock%}
+<!-- -->
+{%block title%} Andrew Hutzel Portfolio {%endblock%} 
+<!-- -->
+{%block body%}
+<!-- Header, banner links -->
+{%include "includes/nav.html"%}
+<!-- Main Content-->
+<!-- Assigning an ID, since this will only be used once-->
+<section id="intro">
+  <div style="width: 60%">
+    <h1>Shopping for svgs and pngs of clothes</h1>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <a>Become a Member</a>
+  </div>
+
+  <!-- Video -->
+  <video controls>
+    <source src="{%static "products/vid/count_down.mp4" %}" />
+  </video>
+</section>
+
+<!-- Product Cards-->
+<!-- Assign a temporary id products to the div to outline it-->
+<div class="product_nav">
+  <h3>Suits</h3>
+  <a href="{%url "product_category" "Suits"%}">View Suits List</a>
+</div>
+<main id="product_intro">
+  <div class="product_cards">
+    <img src="{% static "products/img/suit-2.png" %}" class="product_img" />
+    <div style="padding: 10px 30px">
+      <h3>Product 1</h3>
+      <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+      <a href="">View Product</a>
+    </div>
+  </div>
+
+  <div class="product_cards">
+    <img src="{% static "products/img/suit-2.png" class="product_img" %}" />
+    <div style="padding: 10px 30px">
+      <h3>Product 2</h3>
+      <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+      <a href="">View Product</a>
+    </div>
+  </div>
+
+  <div class="product_cards">
+    <img src= "{% static "products/img/suit-3.png" class="product_img"%}" />
+    <div style="padding: 10px 30px">
+      <h3>Product 3</h3>
+      <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+      <a href="">View Product</a>
+    </div>
+  </div>
+
+  <div class="product_cards">
+    <img src="{% static "products/img/suit-4.png" class="product_img" %}" />
+    <div style="padding: 10px 30px">
+      <h3>Product 4</h3>
+      <p>Lorem ipsum dolor sit amet, olore magna aliqua.</p>
+      <a href="">View Product</a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+</footer>
+{%endblock%}
