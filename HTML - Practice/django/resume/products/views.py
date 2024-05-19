@@ -28,4 +28,7 @@ def product_category(request,product):
     return HttpResponse(f"This list is not supported!")
 
 def product_page(request,product_brand,product_slug):
-    return render(request,"products/product.html")
+    product = Product.objects.get(slug= product_slug)
+    return render(request,"products/product.html",{
+        "product":product
+    })
