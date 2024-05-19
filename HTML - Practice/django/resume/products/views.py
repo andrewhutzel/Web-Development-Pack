@@ -1,6 +1,7 @@
 from django.shortcuts import render
 #Exclusively added to index function test
 from django.http import HttpResponse
+from .models import Product
 
 
 # Create your views here.
@@ -10,9 +11,11 @@ from django.http import HttpResponse
 def index(request):
     user = "eest"
     products_num=4
+    products = Product.objects.all().order_by('-id')[:4]
     return render(request, "products/home.html", {
         "name":user,
         "products_num":products_num,
+        "products":products,
     })
 
 def signup(request):

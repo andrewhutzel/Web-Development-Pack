@@ -10,5 +10,5 @@ urlpatterns = [
     #Uncomment below to make Example work
     #path('website_function',views.index),
     path('products/<product>',views.product_category,name="product_category"),
-    path('signup.html',views.signup, name="signup")
+    path('signup.html',views.signup, name="signup"),
 ]
