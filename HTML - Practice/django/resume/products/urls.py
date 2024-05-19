@@ -12,4 +12,5 @@ urlpatterns = [
     path('products/<product>',views.product_category,name="product_category"),
     path('signup.html',views.signup, name="signup"),
     path('products/<product_brand>/<product_slug>', views.product_page, name="product_page")
+    #path('products/<product_brand>/', views.product_page, name="product_page")
 ]

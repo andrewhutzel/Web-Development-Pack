@@ -7,10 +7,11 @@ from .models import Product, Brand, Address, Category
 
 
 class productAdmin(admin.ModelAdmin):
-    readonly_fields = ("slug",)
+    #readonly_fields = ("slug",)
     list_display = ("title","id","best_seller", "brand",)#Removed category
     list_filter = ("best_seller",)
     search_fields = ("title",) 
+    prepopulated_fields ={"slug": ("title",)}
 
 class addressAdmin(admin.ModelAdmin):
     list_display =("street","zip_code","city","country",)

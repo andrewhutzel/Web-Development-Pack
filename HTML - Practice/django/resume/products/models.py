@@ -38,7 +38,7 @@ class Product(models.Model):
     image = models.ImageField(blank=True, upload_to='product-img')
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE, null=True, related_name="products")
     price = models.FloatField()
-    slug = models.SlugField(blank=True)
+    slug = models.SlugField(default="", null=False)
     best_seller = models.BooleanField(default=False)
     #Make a connection for other products here
     suggestions = models.ManyToManyField('self', blank=True)
@@ -46,7 +46,9 @@ class Product(models.Model):
     def __str__(self):
         return f"{self.title}"
     
-    def save(self,*args,**kwargs):
-        super().save(*args,**kwargs)
-        self.slug = self.id
-        super().save(*args,**kwargs)
+
+    # Will save over a your slug and replace the custom title with a number which isn't what I want.
+    #def save(self,*args,**kwargs):
+    #    super().save(*args,**kwargs)
+    #    self.slug = self.id
+    #    super().save(*args,**kwargs)
