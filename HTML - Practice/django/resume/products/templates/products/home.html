@@ -43,7 +43,10 @@
     <div style="padding: 10px 30px">
       <h3>{{product.title}}</h3>
       <p>{{product.description}}</p>
-      <a href="">View Product</a>
+      {% if product.brand %}
+        <p>{{product.brand.title}}</p>
+      {% endif %}
+      <a href="{% url "product_page" product.brand.title product.slug %}">View Product</a>
     </div>
   </div>
   {% endfor %}
