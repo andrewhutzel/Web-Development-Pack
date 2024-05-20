@@ -25,15 +25,6 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-
-  <h3 align="center">Web-Development-Pack</h3>
-</div>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
