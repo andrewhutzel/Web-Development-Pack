@@ -27,9 +27,25 @@
   </main>
   <section id="feedback">
     <h3>User's feedback?</h3>
-    <form>
-      <label for="username">Name</label><br />
-      <input id="username" name="username" type"text" /><br />
+    {%if messages%}
+        {%for message in messages%}
+            <p style="color:green">{{message}}</p>
+        {%endfor%}
+    {%endif%}
+    <form method="POST">
+      {% csrf_token %} 
+      {% if field.help_text %}
+        <p>{{field.help_text}}</p>
+      {%endif%}
+      {% for field in form%}
+            {{field.label_tag}}<br/>
+            {{field}}<br/>
+            {%for error in field.errors%} 
+                <p style="color:red">{{error}}</p><br/>
+            {%endfor%}
+            <br/>
+      {%endfor%}
+
       <button>Submit</button>
     </form>
   </section>

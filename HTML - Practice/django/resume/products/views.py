@@ -2,6 +2,9 @@ from django.shortcuts import render
 #Exclusively added to index function test
 from django.http import HttpResponse
 from .models import Product, Brand
+from django.contrib import messages
+
+from .forms import FeedbackForm
 
 
 # Create your views here.
@@ -29,6 +32,21 @@ def product_category(request,product):
 
 def product_page(request,product_brand,product_slug):
     product = Product.objects.get(slug= product_slug)
-    return render(request,"products/product.html",{
-        "product":product
-    })
+    form = FeedbackForm()
+    
+    if(request.method == "GET"):
+        return render(request,"products/product.html",{
+        "product":product,
+        "form":form,
+        })
+    else:
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            print(form.cleaned_data)
+            messages.success(request, "Feedback was successfully submitted.")
+            form = FeedbackForm()
+        #result = request.POST["username"]
+        return render(request,"products/product.html",{
+        "product":product,
+        "form":form,
+        })
