@@ -1,0 +1,86 @@
+/*
+    Basic nav background has been set.
+    A href's style set.
+    Selected, highlighting what page a user is on.
+    img, border was rounded. KEY, remember to put . in front of class
+*/
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+
+/* Nav Bar -- EXPORTED from style.css BELOW */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    box-shadow: 0px 5px 10px #666464;
+    height:60px;
+}
+
+.main-nav {
+    padding:20px;
+    display: flex;
+    gap: 40px 40px;
+}
+
+.main-nav a{
+    font-size: 20px;
+    color: #06082B;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.main-nav a:hover{
+    color: #fb6376;   
+}
+
+#selected{
+    color:#182BFB
+}
+
+
+/*------- Product Information ------- */
+
+#product-main-con{
+    width:1000px;
+    margin: auto;
+}
+
+#product-main-con main{
+    display: flex;
+    width: 100%;
+    margin:50px;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+#product-main-con main button{
+    background-color: #5762d5;
+    font-size:20px;
+    color:white;
+    font-weight: bold;
+    border:none;
+    padding:10px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#product-main-con button:hover{
+    background-color: #fb6376;
+}
+
+#product-main-con img{
+    border-radius: 13px;
+}
+
+#feedback{
+    padding:30px;
+    background-color: #E9E6F0;
+    border-radius: 20px;
+    margin-top:70px;
+
+}

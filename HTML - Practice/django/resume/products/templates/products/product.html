@@ -2,16 +2,38 @@
 <!--  -->
 {%load static%}
 <!--  -->
-{%block description%}This is my product{%endblock%}
+{%block description%}{{product.description}}}{%endblock%}
 <!--  -->
 {%block robots%}index, follow{%endblock%}
 <!--  -->
 {%block keywords%}suits r cool{%endblock%}
 <!--  -->
-{%block css%}{%static "products/signup.css"%}{%endblock%}
+{%block css%}{%static "products/product.css"%}{%endblock%}
 <!--  -->
-{%block title%}{{product.slug}}{%endblock%}
+{%block title%}{{product.title}}{%endblock%}
 <!--  -->
 {%block body%}
 <!--  -->
-{%include "includes/nav.html"%} {%endblock%}
+{%include "includes/nav.html"%}
+<div id="product-main-con">
+  <main>
+    <img src="{{product.image.url}}" />
+    <div>
+      <h1>{{product.title}}</h1>
+      <p>{{product.brand.title}}</p>
+      <p>{{product.description}}</p>
+      <button>Add to cart</button>
+    </div>
+  </main>
+  <section id="feedback">
+    <h3>User's feedback?</h3>
+    <form>
+      <label for="username">Name</label><br />
+      <input id="username" name="username" type"text" /><br />
+      <button>Submit</button>
+    </form>
+  </section>
+</div>
+
+<!--  -->
+{%endblock%}
