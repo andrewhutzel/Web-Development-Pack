@@ -1,0 +1,70 @@
+{%extends "base.html"%}
+<!--  -->
+{%load static%}
+<!--  -->
+{%block description%}This is my signup{%endblock%}
+<!--  -->
+{%block robots%}index, follow{%endblock%}
+<!--  -->
+{%block keywords%}suits r cool{%endblock%}
+<!--  -->
+{%block css%}{%static "products/signup.css"%}{%endblock%}
+<!--  -->
+{%block title%}My signup test!{%endblock%}
+<!--  -->
+{%block body%}
+<!--  -->
+{%include "includes/nav.html"%}
+
+<form class="sign_up">
+  <!-- Full name -->
+  <label for="name">Full Name</label><br />
+  <input class="field" name="name" id="name" required />
+  <br />
+  <!-- Email input-->
+  <label for="email">Email:</label><br />
+  <input class="field" type="email" id="email" required />
+  <!-- Password Input -->
+  <br />
+  <label for="pass">Password:</label> <br />
+  <input class="field" type="password" id="pass" required />
+  <br />
+
+  <!-- Phone number 
+        <label for="phone">Enter your phone #:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        -->
+
+  <!-- Gender
+        <label for="gender">Gender:</label><br>
+         <select name="gender" required>
+             <option value="">Please select one…</option>
+             <option value="female">Female</option>
+             <option value="male">Male</option>
+             <option value="non-binary">Non-Binary</option>
+             <option value="other">Other</option>
+             <option value="Prefer not to answer">Perfer not to Answer</option>
+          </select>
+          <br>
+
+        -->
+  <!-- Date of birth
+        <label for="birthday">Date of birth:</label><br>
+        <input type="date" id="birthday" name="birthday" required><br>
+        -->
+
+  <!-- Profile image 
+        <label for="image">Upload Profile image</label><br>
+          <input type="file" id="image"> 
+        <br>
+        -->
+
+  <!-- Terms of use checkbox -->
+  <input id="checkbox" type="checkbox" required />
+  <label for="checkbox">I agree to the <a href="">Terms and Conditions</a> of using this demo website... </label>
+  <br /><br />
+  <!-- Signup Button -->
+  <button>Signup</button>
+</form>
+
+{%endblock%}
