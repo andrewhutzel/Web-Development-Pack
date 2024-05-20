@@ -69,7 +69,7 @@ header{
     transition-duration: 0.3s;
 }
 
-#product-main-con button:hover{
+#product-main-con main button:hover{
     background-color: #fb6376;
 }
 
@@ -84,3 +84,37 @@ header{
     margin-top:70px;
 
 }
+
+/*---- Feedback Form ----*/
+
+#feedback input, #feedback textarea{
+    width:95%;
+    display: block;
+    font-size:18px;
+    padding:7px 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+#feedback label{
+    font-weight: 300;
+    display:block;
+    margin-bottom: 4px;
+}
+
+#feedback button{
+    border: none;
+    border-radius:13px;
+    background-color: #5762d5;
+    color:white; 
+    font-size:18px;
+    padding:10px;
+    width:20%;
+    cursor:pointer;
+    transition-duration: 0.3s;
+}
+
+ #feedback button:hover{
+    background-color: #fb6376;
+ }

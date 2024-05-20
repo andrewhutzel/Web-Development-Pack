@@ -1,6 +1,6 @@
 from django.contrib import admin
 #Import model from current directory, in this cash the Shirt model
-from .models import Product, Brand, Address, Category
+from .models import Product, Brand, Address, Category, Feedback
 
 
 # Register your models here.
@@ -21,6 +21,11 @@ class addressAdmin(admin.ModelAdmin):
 class categoryAdmin(admin.ModelAdmin):
     list_display=("title","description")
 
+class feedbackAdmin(admin.ModelAdmin):
+    list_display=("name","rating","product","text","id")
+
+
+admin.site.register(Feedback,feedbackAdmin)
 admin.site.register(Category,categoryAdmin)
 admin.site.register(Address,addressAdmin)
 admin.site.register(Brand)

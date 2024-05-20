@@ -38,16 +38,32 @@
         <p>{{field.help_text}}</p>
       {%endif%}
       {% for field in form%}
-            {{field.label_tag}}<br/>
-            {{field}}<br/>
+            {{field.label_tag}}
+            {{field}}
             {%for error in field.errors%} 
-                <p style="color:red">{{error}}</p><br/>
+                <p style="color:red">{{error}}</p>
             {%endfor%}
             <br/>
       {%endfor%}
 
       <button>Submit</button>
     </form>
+  </section>
+  <section>
+  
+    {%for review in reviews %}
+        <h4>
+            {{review.name}} - {{review.rating}}
+            {%if review.rating == 5%} 🌕🌕🌕🌕🌕
+            {%elif review.rating == 4%}🌕🌕🌕🌕🌑
+            {%elif review.rating == 3%}🌕🌕🌕🌑🌑
+            {%elif review.rating == 2%}🌕🌕🌑🌑🌑
+            {%else %}🌕🌑🌑🌑🌑
+            {%endif%}
+        </h4>
+            <p>{{review.text}} </p> </br>
+    {%endfor%}
+
   </section>
 </div>
 
